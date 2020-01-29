@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/root_layout"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/bg_bottom_sheet"
+              android:layout_gravity="bottom"
+              android:orientation="vertical"
+              android:padding="@dimen/dimen_normal"
+              android:theme="@style/AppTheme">
+
+    <TextView
+            android:id="@+id/tv_title"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textDarkColor"
+            android:gravity="start"
+            android:textAlignment="viewStart"
+            android:textSize="18sp"/>
+
+    <TextView
+            android:id="@+id/tv_sub_title"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:textAlignment="viewStart"
+            android:textColor="@color/textColor"
+            android:layout_marginTop="@dimen/dimen_xx_small" />
+
+    <TextView
+            android:id="@+id/tv_description"
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:textAlignment="viewStart"
+            android:layout_marginTop="@dimen/dimen_12"/>
+
+    <ImageView
+            android:id="@+id/iv_fingerprint"
+            android:layout_width="@dimen/fingerprint_width"
+            android:layout_height="@dimen/fingerprint_height"
+            android:background="@drawable/bg_fingerprint"
+            android:contentDescription="@string/app_name"
+            android:layout_marginTop="@dimen/dimen_large"
+            android:padding="@dimen/dimen_12"
+            android:src="@drawable/ic_fingerprint"
+            android:layout_gravity="center"/>
+
+    <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_small"
+            android:layout_marginBottom="@dimen/dimen_normal"
+            android:textColor="@color/textColorLight"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="@string/status_hint"
+            android:layout_gravity="center"
+            android:gravity="start"
+            android:textAlignment="viewStart"
+            app:layout_constraintTop_toBottomOf="@id/iv_fingerprint"
+            app:layout_constraintBottom_toTopOf="@id/btn_cancel" />
+
+    <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_small"
+            android:layout_marginEnd="@dimen/dimen_small"
+            android:layout_marginTop="@dimen/dimen_large"
+            android:text="@string/cancel"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_gravity="end"
+            android:textAllCaps="false"
+            android:layout_marginBottom="@dimen/dimen_large"/>
+
+</LinearLayout>

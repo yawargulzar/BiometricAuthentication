@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="logo_width">48dp</dimen>
+    <dimen name="logo_height">48dp</dimen>
+
+    <dimen name="fingerprint_width">72dp</dimen>
+    <dimen name="fingerprint_height">72dp</dimen>
+
+    <dimen name="dimen_xx_small">2dp</dimen>
+    <dimen name="dimen_x_small">4dp</dimen>
+    <dimen name="dimen_small">8dp</dimen>
+    <dimen name="dimen_10">10dp</dimen>
+    <dimen name="dimen_12">12dp</dimen>
+    <dimen name="dimen_normal">16dp</dimen>
+    <dimen name="dimen_18">18dp</dimen>
+    <dimen name="dimen_20">20dp</dimen>
+    <dimen name="dimen_large">24dp</dimen>
+    <dimen name="dimen_28">28dp</dimen>
+    <dimen name="dimen_36">36dp</dimen>
+    <dimen name="dimen_x_large">48dp</dimen>
+    <dimen name="dimen_56">56dp</dimen>
+    <dimen name="dimen_64">64dp</dimen>
+
+</resources>
